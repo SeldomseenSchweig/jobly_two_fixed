@@ -8,40 +8,14 @@ import CurrentUserContext from "../CurrentUserContext";
 function NavBar({logout}) {
 
   const user = useContext(CurrentUserContext)
- console.log()
     
   
   return (
     <div>
-      {/* <Navbar expand="md">
-        <NavLink exact to="/" className="navbar-brand">
-         Jobly
-        </NavLink>
 
-        <Nav className="ml-auto" navbar>
-          
-          <NavItem>
-            <NavLink to="/companies">Companies</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink to="/jobs">Jobs</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink to="/profile"> Profile</NavLink>
-          </NavItem>
-  
-
-          <NavItem>
-            <NavLink to="/signup"> Signup</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink to="/login"> Login</NavLink>
-          </NavItem>
-        </Nav>
-      </Navbar> */}
       {!user.currentUser ? <Navbar expand="md">
         <NavLink exact to="/" className="navbar-brand">
-         Jobly
+         SF Murals
         </NavLink>
 
         <Nav className="ml-auto" navbar>
@@ -55,13 +29,13 @@ function NavBar({logout}) {
       </Navbar> :
 
       <Navbar expand="md"><NavLink exact to="/" className="navbar-brand">
-         Jobly
+         SF Murals
         </NavLink>
 
         <Nav className="ml-auto" navbar>
           
           <NavItem>
-            <NavLink to="/companies">Companies</NavLink>
+            <NavLink to="/companies">Mural Search</NavLink>
           </NavItem>
           <NavItem>
             <NavLink to="/jobs">Jobs</NavLink>

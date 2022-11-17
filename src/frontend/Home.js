@@ -14,7 +14,7 @@ function Home() {
             <CardTitle>
               
               <h1 className="font-weight-bold">
-                  Jobly
+                  SF Murals
               </h1>
               <h3> All the jobs in one, convenient place. </h3> 
               { user.currentUser? <h2> Welcome Back {user.currentUser.user.firstName} </h2>:  <>
